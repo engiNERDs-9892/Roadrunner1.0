@@ -14,6 +14,8 @@ import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
+import org.firstinspires.ftc.teamcode.Misc.Localizer;
+
 @Config
 public final class ThreeDeadWheelLocalizer implements Localizer {
     public static class Params {
