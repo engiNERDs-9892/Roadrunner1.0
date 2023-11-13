@@ -24,9 +24,6 @@ public class TeleOP_Variables {
     public static double Open = 0.33;
     public static double Close = 0;
 
-    public static double Rest = 0;
-
-    public static double Raise = .33;
     public static final int slideySlideMax = 7700;
     public static final int slideySlideMin = 100;
 

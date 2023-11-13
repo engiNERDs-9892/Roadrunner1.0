@@ -1,9 +1,11 @@
 package org.firstinspires.ftc.teamcode.Driver_Control;
 
+import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.Close;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.FlippyFlip;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.FlooppyFloop;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.GearServo;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.LeftClaw;
+import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.Open;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.RightClaw;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.motorBL;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.motorBR;
@@ -13,6 +15,8 @@ import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.motorLif
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.motorRiseyRise;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.slideySlideMax;
 import static org.firstinspires.ftc.teamcode.Variables.TeleOP_Variables.slideySlideMin;
+
+import android.graphics.Path;
 
 import com.qualcomm.hardware.rev.RevHubOrientationOnRobot;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -223,10 +227,10 @@ public class EngiNERDs_Control_FC extends LinearOpMode {
             }
 
             if (Right_Claw_Toggle) {
-                RightClaw.setPosition(.33);
+                RightClaw.setPosition(Open);
             }
             else {
-                RightClaw.setPosition(0);
+                RightClaw.setPosition(Close);
             }
 
 
@@ -239,10 +243,10 @@ public class EngiNERDs_Control_FC extends LinearOpMode {
             }
 
             if (Left_Claw_Toggle) {
-                LeftClaw.setPosition(.33);
+                LeftClaw.setPosition(Open);
             }
             else {
-                LeftClaw.setPosition(0);
+                LeftClaw.setPosition(Close);
             }
 
             if(Math.abs(gamepad2.right_stick_y) <= -0.5) {
